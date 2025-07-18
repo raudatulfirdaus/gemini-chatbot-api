@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Chatbot</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded shadow-md w-full max-w-md flex flex-col h-[80vh]">
+        <h1 class="text-2xl font-bold mb-4 text-center">Gemini Chatbot</h1>
+        <div id="chat-history" class="flex-1 overflow-y-auto mb-4 p-2 bg-gray-50 rounded space-y-4"></div>
+        <form id="chat-form" class="flex gap-2 mt-auto">
+            <input id="user-input" type="text" placeholder="Tulis pesan..."
+                class="border rounded px-3 py-2 flex-1 focus:outline-none focus:ring-2 focus:ring-blue-400" required
+                autocomplete="off">
+            <button type="submit" class="bg-blue-500 text-white rounded px-4 py-2 hover:bg-blue-600">Kirim</button>
+        </form>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
